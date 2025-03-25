@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Face Verification Failed</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        h1 {
+            color: red;
+            font-size: 24px;
+        }
+        p {
+            font-size: 18px;
+            margin: 20px 0;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color:  #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color:  #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Face Verification Failed</h1>
+        <p>The Registered face and your face do not match.</p>
+        <button onclick="verifyAgain()">Verify Again</button>
+    </div>
+
+    <script>
+        function verifyAgain() {
+            // Redirect to faceverify.html
+            window.location.href = 'login.php';
+        }
+    </script>
+
+</body>
+</html>
